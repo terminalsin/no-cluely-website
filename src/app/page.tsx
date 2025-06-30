@@ -1,12 +1,12 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 "use client"
 
 import { useState } from 'react'
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
-import { Download, Shield, Eye, Github, Star, CheckCircle, AlertCircle, GraduationCap, BookOpen, Brain, Zap, X, ThumbsDownIcon } from 'lucide-react'
+import { Download, Eye, Github, Star, CheckCircle, AlertCircle, BookOpen, ThumbsDownIcon } from 'lucide-react'
 import Image from 'next/image'
 
 export default function Home() {
@@ -47,6 +47,7 @@ export default function Home() {
       } else {
         setError(data.error || 'GitHub API said no 🚫')
       }
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (err) {
       setError('Network error. Touch grass and try again. 🌱')
     } finally {
@@ -169,7 +170,7 @@ export default function Home() {
                             <AlertCircle className="h-6 w-6" />
                             <span className="font-bold text-xl">Homework Not Submitted! 📋</span>
                           </div>
-                          <p className="text-lg">You need to star the repo first. It's literally free and takes 2 seconds. Don't be lazy! 😤</p>
+                          <p className="text-lg">You need to star the repo first. It&apos;s literally free and takes 2 seconds. Don&apos;t be lazy! 😤</p>
                         </div>
                         <a
                           href="https://github.com/terminalsin/no-cluely"
@@ -196,7 +197,7 @@ export default function Home() {
                       <div className="bg-green-100 border-4 border-green-500 p-6 rounded-lg">
                         <div className="flex items-center gap-4 text-green-800 mb-2">
                           <CheckCircle className="h-6 w-6" />
-                          <span className="font-bold text-xl">Good job! Here's your A+ 🌟</span>
+                          <span className="font-bold text-xl">Good job! Here&apos;s your A+ 🌟</span>
                         </div>
                         <p className="text-lg mt-2">Download should start automatically. You actually did the thing!</p>
                       </div>
@@ -259,7 +260,7 @@ export default function Home() {
                   <ul className="space-y-2">
                     <li className="flex items-start gap-6">
                       <span className="bg-red-100 text-red-800 px-4 py-2 rounded font-bold text-base whitespace-nowrap">FAIL #1</span>
-                      <span className="text-lg leading-relaxed"><strong>Names its process "cluely"</strong> - Like wearing a shirt that says "I'M CHEATING" 💀</span>
+                      <span className="text-lg leading-relaxed"><strong>Names its process &quot;cluely&quot;</strong> - Like wearing a shirt that says &quot;I&apos;M CHEATING&quot; 💀</span>
                     </li>
                     <li className="flex items-start gap-6">
                       <span className="bg-red-100 text-red-800 px-4 py-2 rounded font-bold text-base whitespace-nowrap">FAIL #2</span>
@@ -272,7 +273,7 @@ export default function Home() {
                   </ul>
                   <div className="bg-yellow-100 border-4 border-yellow-400 p-4 rounded-lg">
                     <p className="text-yellow-800 text-base italic leading-relaxed">
-                      💬 "A CS:GO cheater would have had an easier time making a VAC bypass than this" - Some chad developer, probably
+                      💬 &quot;A CS:GO cheater would have had an easier time making a VAC bypass than this&quot; - Some chad developer, probably
                     </p>
                   </div>
                 </div>
