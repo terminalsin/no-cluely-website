@@ -37,6 +37,7 @@ export async function POST(request: NextRequest) {
             }
 
             // Check if username is in this page of stargazers
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             found = stargazers.some((stargazer: any) =>
                 stargazer.login.toLowerCase() === username.toLowerCase()
             )
