@@ -108,7 +108,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="flex items-center justify-center pb-6 sm:pb-8 lg:pb-12">
+            <div className="flex items-center justify-center pb-2">
               <Dialog>
                 <DialogTrigger asChild>
                   <Button size="lg" className="bg-transparent hover:bg-blue-600 border-2 border-blue-500 hover:text-white hover:border-transparent text-blue-500 px-4 sm:px-8 lg:px-12 py-3 sm:py-4 lg:py-6 text-sm sm:text-lg lg:text-2xl transform hover:scale-105 transition-all shadow-xl">
@@ -207,6 +207,14 @@ export default function Home() {
                 </DialogContent>
               </Dialog>
             </div>
+            <div className='flex items-center justify-center pt-2 pb-6 sm:pb-8 lg:pb-12'>
+              <a href='https://github.com/terminalsin/no-cluely' className="flex items-center gap-2 sm:gap-3 hover:scale-105 transition-all duration-300 group">
+                <div className="text-black px-3 sm:px-4 py-1 sm:py-2 rounded-full text-sm sm:text-sm font-medium transition-all duration-300">
+                  <b>⭐  Click to Star! 👉</b>
+                </div>
+                <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/terminalsin/no-cluely?label=terminalsin%2Fno-cluely" width={200} className="group-hover:scale-105 transition-transform duration-300" />
+              </a>
+            </div>
 
             <div className="bg-red-100 border-l-4 sm:border-l-8 border-red-500 p-4 sm:p-6 lg:p-8 rounded-r-lg">
               <div className="flex items-center justify-center">
@@ -216,6 +224,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
+
 
 
 
